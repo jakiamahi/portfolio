@@ -153,9 +153,9 @@ line-height: normal;
 button:hover{
     background: #c5559e;
 }
-.button:hover {
+/* .button:hover {
     background: scroll;
-}
+} */
 
 .BTN{
     margin-top: -80px;
@@ -259,36 +259,48 @@ letter-spacing: 5.904px;
 .ellipse{
     position: absolute;
     z-index: -1;
-    margin-top: 400px;
+    margin-top: 200px;
 }
-
+.intersect{
+    position: absolute;
+    z-index: -1;
+    margin-left: 300px;
+}
 .dot{
     width: 250px;
 height: 113px;
 transform: rotate(90.224deg);
 flex-shrink: 0;
-margin-left: 500px;
-margin-top: 600px;
+margin-left: 200px;
+/* margin-top: 600px; */
 
 }
 .left{
     
-   
+   padding-left: 630px;
+    margin-top: 100px;
+  
+    margin-bottom: -70px;
+  
+/* text-align: center; */
+font-family: K2D;
+font-size: 39.579px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
 
 }
 .border{
     width: 375px;
 height: 195px;
 flex-shrink: 0;
-border: 2px solid #e169cb;
+border: 2px solid #973385;
 }
 
-.cross{
+#cross{
     margin-left: 700px;
-    margin-top: -100px;
-    position: absolute;
-    z-index: -1;
-    
+     margin-top: -200px;
+
 }
 .contact-btn{
     width: 199px;
@@ -300,3 +312,172 @@ backdrop-filter: blur(33px);
 margin-left: 400px;
 
 }
+.colour{
+    color: #120720;
+  
+}
+#project-1-img{
+    width: 530px;
+height: auto;
+flex-shrink: 0;
+border-radius: 2rem;
+/* background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+position: absolute;
+z-index: -1; */
+}
+.input-box input{
+    width: 517px;
+height: 74px;
+flex-shrink: 0;
+border-radius: 35px;
+border: 1px solid rgba(73, 33, 33, 0.38);
+background: rgba(73, 33, 33, 0.38);
+color: rgba(217, 217, 217, 0.85); 
+text-align: left;
+font-family: Inter;
+font-size: 22px;
+font-style: normal;
+font-weight: 400;
+line-height: 84.469px; /* 383.949% */
+margin-bottom: 30px;
+padding-left: 20px;
+
+
+}
+.heading{
+    text-align: left;
+    margin-left: 20px;
+}
+.input-box textarea{
+    width: 517px;
+    width: 517px;
+    height: 240px;
+    flex-shrink: 0;
+    flex-shrink: 0;
+    border-radius: 35px;
+    border: 1px solid rgba(73, 33, 33, 0.38);
+    background: rgba(73, 33, 33, 0.38);
+    color: rgba(217, 217, 217, 0.85); 
+    text-align: left;
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 84.469px; /* 383.949% */
+    padding-left: 20px;
+}
+
+.input{
+    margin-left: 400px;
+}
+.submit-btn input{
+    width: 200px;
+height: 53px;
+flex-shrink: 0;
+border-radius: 10px;
+border: 4px solid rgba(166, 156, 156, 0.38);
+background: rgba(15, 225, 194, 0.00);
+color: #FFF;
+text-align: center;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+cursor: pointer;
+margin-top: 30px;
+margin-left: 170px;
+
+
+}
+.submit-btn input:hover{
+    box-shadow: 0 0 1rem #e169cb;
+   color: #120720;
+    background: #e169cb;
+}
+.social-icon {
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    gap: 30px;
+    margin-left: 500px;
+    margin-top: 70px;
+   
+
+}
+.social-icon a {
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   width: 3rem;
+   height: 3rem;
+   background: transparent;
+   border: .2rem solid #e169cb;
+   border-radius: 50%;
+   font-size: 1.5rem;
+   margin: 2rem 1.5rem 2rem 0;
+   transition: .5s ease;
+}
+.social-icon a:hover{
+    box-shadow: 0 0 1rem #e169cb;
+   color: #120720;
+    background: #e169cb;
+}
+/* .social-icon a{
+    border: .2rem solid #F237F6;
+    font-size: 2rem;
+    margin: 3rem 1.5rem 3rem 0;
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+} */
+.copyright{
+    color: rgba(153, 141, 141, 0.85);
+text-align: center;
+font-family: K2D;
+font-size: 22px;
+font-style: normal;
+font-weight: 600;
+line-height: 84.469px; /* 703.906% */
+margin-top: -30px;
+}
+
+.portfolio-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+
+}
+.portfolio-container .portfolio-box{
+    position: relative;
+    border-radius: 2rem;
+    /* box-shadow: 0 0 1rem #2f2f30; */
+    overflow: hidden;
+    display: flex;
+
+}
+.portfolio-box img{
+    width: ;
+}
+.portfolio-box .portfolio-layer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, .1), #973385);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#project-section{
+    margin-top: 100px;
+}
+    
+#contact-section{
+    margin-top: 200px;
+}
+
