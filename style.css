@@ -1,7 +1,18 @@
+ * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+} 
+
 body{
+
     background-color: #120720;
-    /* padding: 50px 100px; */
-    /* background-image: url('./images/background.png'); */
+    padding: 50px 100px;
+    color: #FFF;
+    font-family: 'inter';
+  
     
 }
 .header{
@@ -9,16 +20,17 @@ body{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 2rem 9%;
+    padding: 2rem 6.6%;
     background: #120720;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; 
+    z-index: 1;
 
 }
 .logo{
     
-    /* color: #c156a8; */
+    
     font-size: 32px;
     font-style: normal;
     font-weight: 700;
@@ -32,6 +44,7 @@ body{
     color: transparent; */
 
 }
+
 .navber a {
     font-size: 1rem;
     color: #FFF;
@@ -62,14 +75,12 @@ a{
 }
 
 section{
-    min-height: 100vh;
-    padding: 10rem 9% 2rem;
+    /* min-height: 100vh; */
+    /* padding: 10rem 9% 2rem; */
 }
 
-.hero{
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
+#hero-section{
+    margin-top: 100px;
 }
 h1{
     color: #FFF;
@@ -80,7 +91,7 @@ h1{
     font-weight: 800;
     line-height: 128.571%; /* 51.429px */
     letter-spacing: 1.3px;
-    z-index: 1;
+    
     
 }
 .flex{
@@ -118,7 +129,7 @@ line-height: normal;
 letter-spacing: 1.294px;
 text-align: left;
 padding-top: 30px;
-}
+} 
 #img{
     padding-top: 40px;
 }
@@ -185,7 +196,7 @@ button:hover{
     /* display: flex;
     justify-content: space-between;
     align-items: center; */
-    margin-top: -100px;
+    margin-top: 100px;
 
     
 }
@@ -230,7 +241,8 @@ text-align: left;
 
 } 
 #skills-section{
-    margin-top: -100px;
+    margin-top: 
+    100px;
 }
 .Skills{
     color: #FFF;
@@ -442,7 +454,7 @@ margin-left: 170px;
     display: inline-flex;
     gap: 30px;
     margin-top: 20px;
-    margin-left: 550px;
+    margin-left: 430px;
    
 
 }
@@ -475,7 +487,7 @@ font-weight: 600;
 line-height: 84.469px; /* 703.906% */
 margin-top: -30px;
 align-items: center;
-margin-left: 60px;
+
 }
 
 .portfolio-container{
@@ -500,7 +512,7 @@ margin-left: 60px;
 
 }
 form{
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .portfolio-box img{
@@ -550,10 +562,10 @@ form{
 }
 
 #contact-section{
-    margin-top: -150px;
+    margin-top: 150px;
 }
 #project-section{
-    margin-top: -130px;
+    margin-top: 100px;
 }
 .icon-menu{
     font-size: 4rem;
@@ -571,7 +583,7 @@ form{
     border-top: .1rem solid rgba(0, 0, 0, .2);
     box-shadow:  0.5rem 1rem rgba(0, 0, 0, .2);
     font-size: 3rem;
- 
+    font-family: 'inter';
 
 }
 
@@ -596,9 +608,9 @@ form{
  
 
  @media screen and (max-width: 1441px){
-    #hero-section{
+    /* #hero-section{
         gap: 330px;
-     }
+     } */
      .portfolio-box {
         width: 30vw;
         height: 140%;
@@ -618,10 +630,10 @@ form{
  }
 
 
- @media screen and (max-width: 1025px){
+ @media screen and (min-width: 769px) and (max-width: 1025px){
     #hero-section{
        gap: 300px;
-    }
+    } 
     .navber{
         font-size: 5rem;
     }
@@ -629,10 +641,10 @@ form{
         font-size: 2rem;
     }
     .Skills{
-        margin-left: 15rem;
+        margin-left: 20rem;
     }
     #skill-div{
-        gap: 3*00px;
+        gap: 300px;
     }
     .about-img{
         width: 500px;
@@ -645,31 +657,33 @@ form{
         grid-template-columns: repeat(3, 1fr);
         
     }
-     /* .portfolio-box {
+     .portfolio-box {
         width: 45vw;
         height: 140%;
-    } */
+    } 
     #contact-section{
         margin-top: 4rem;
     }
-    /* .copyright{
-        margin-left: 500px;
-        width: 100vw;
-    } */
+     .copyright{
+        margin-left: 00px;
+        width: 70vw;
+    } 
     .footer{
         width: 100vw;
         margin-left: 300px;
     }
     #contact{
-         margin-left: 100px;
+         margin-left: 200px;
+        width: 100vw;
+        margin-top: 130px;
+    }
+    #project{
+        margin-left: 200px;
         width: 100vw;
     }
 
  }
 
- @media screen  {
-    
- }
  @media screen and (max-width: 769px) {
     .navber{
         display: none;
@@ -679,45 +693,53 @@ form{
     }
     .hero{
         flex-direction: column;
+    }#hero-section{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
     }
     .about{
         flex-direction: column-reverse;
     }
     .hero-img{
         margin-left: 700px;
-        margin-top: -200px;
+        margin-top: 200px;
        
        
     }
     .heroin{
-        width: 80vw;
+        width: 100vw;
         margin-left: 400px;
     }
     #skill-div{
-        gap: 600px;
+        gap: 300px;
         
     }
     .hero-container{
-        justify-content: center;
+         justify-content: center;
         align-items: center;
         text-align: center;
-        margin-left: 700px;
+   
+         width: 100%;
     } 
      #hero-title{
         font-size: 4rem;
+        text-align: left;
+        
     }
     .portfolio-container {
         grid-template-columns: repeat(2, 1fr);
 
     }
     .portfolio-box {
-        width: 100vw;
+        width: 90vw;
         height: 100%;
     }
     .about-content{
        
-        width: 90%;
-        height: 100%;
+        width: 150vw;
+ 
+        margin-left: 200px;
     }
     .about-content h1{
         font-size: 5rem;
@@ -729,34 +751,35 @@ form{
     } 
     .about-img{
         margin-left: 800px;
+        width: 80vw;
     }
     .Skills{
-        margin-left: 400px;
-        width: 100vw;
+        margin-left: 200px;
+        width: 150vw;
     }
    
      #project{
-        margin-left: 29rem;
-        width: 100vw;
+        margin-left: 200px;
+        width: 150vw;
       
     } 
     .about-content{
         align-items: center;
-            margin-left: 900px;
+            /* margin-left: 900px; */
             width: 100vw;
             height: 170%;
     } 
     #contact{
-        margin-left: 600px;
+        margin-left: 240px;
         width: 100vw;
     }
     .footer{
         width: 100vw;
-        margin-left: 450px;
+        margin-left: 400px;
     }
     
  }
- @media screen and (min-width: 580px) and (max-width: 769px) {
+ /* @media screen and (min-width: 580px) and (max-width: 769px) {
     .navber{
         display: none;
     }
@@ -764,7 +787,7 @@ form{
         font-size: 4rem;
     }
     .myself{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     .btn{
         margin-top: 3rem;
@@ -791,19 +814,15 @@ form{
     footer{
         margin-left: 300px;
     }
-     /* .hero-img{
-        width: 120vw;
-        margin-left: 1000px;
-    } */
     .hero-container{
         justify-content: center;
         align-items: center;
         text-align: center;
-        margin-left: 1200px;
+   
  }
  .about-content{
     align-items: center;
-    margin-left: 900px;
+ 
         width: 50vw;
         height: 170%;
 } 
@@ -847,7 +866,7 @@ form{
         width: 150vw;
         height: 100%;
     }
-}
+} */
  @media screen and (max-width: 426px) {
     .navber{
         display: none;
@@ -856,7 +875,7 @@ form{
         font-size: 6rem;
     }
     .myself{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     .btn{
         margin-top: 2rem;
@@ -871,9 +890,14 @@ form{
        
 
     }
+    #hero-section{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
     .hero-img{
         
-        margin-left: 400px;
+        margin-left: 800px;
     }
     .heroin{
         width: 140vw;
@@ -882,7 +906,10 @@ form{
         justify-content: center;
         align-items: center;
         text-align: center;
-        margin-left: 900px;
+        width: 190%;
+        margin-left: 100px;
+
+      
     }
     .icon-menu{
         font-size: 7rem;
@@ -902,17 +929,17 @@ form{
     }
     .about-content{
         align-items: center;
-        margin-left: 700px;
-        width: 100vw;
-        height: 170%;
+        margin-left: 00px;
+        width: 10vw;
+        height: 100%;
     } 
     .about-content h1{
         font-size: 5rem;
-        width: 100vw;
+        width: 130vw;
        
     }  
     .about-content p{
-        width: 130vw;
+        width: 150vw;
         height: 50%;
         font-size: 2rem;
     }
@@ -921,12 +948,20 @@ form{
         margin-left: 400px;
     }
     #contact{
-        width: 150vw;
-        margin-right: 600px;
+        width: 300vw;
+        margin-left: 0px;
+    
+       
 
     }
     #skill-div{
-        gap: 200px;
+        gap: 100px;
         
+    }
+    .contact-form{
+        margin-left: -100px;
+    }
+    footer{
+        margin-left: -130px;
     }
  }
